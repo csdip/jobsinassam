@@ -9,8 +9,10 @@
     <link href="/your-path-to-uicons/css/uicons-rounded-regular.css" rel="stylesheet">
     <link href="/your-path-to-uicons/css/uicons-rounded-bold.css" rel="stylesheet">
     <link href="/your-path-to-uicons/css/uicons-rounded-solid.css" rel="stylesheet">
-    <link href="/website/css/uicons-outline-rounded.css"
-rel="stylesheet">   
+    <link href="/website/css/uicons-outline-rounded.css" rel="stylesheet">   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
 <body>
     <i class="fi fi-rr-user"></i>
     <i class="fi fi-br-arrow-right"></i>
@@ -260,7 +262,7 @@ rel="stylesheet">
 
 
     <div class="copyright">
-        <p>&copy; Copyright 2023 <a href="#">JobsInAssam</a></p>
+        <p>&copy; Copyright <span></span> <a href="#">JobsInAssam</a></p>
     </div>
 
 
@@ -289,6 +291,10 @@ rel="stylesheet">
         toggleBtn.addEventListener('click', ()=>{
             toggleBtn.classList.toggle('active')
         })
+
+        let date =  new Date();
+        let year = date.getFullYear();
+        document.querySelector(".copyright span").innerHTML = year;
 
 
     </script>
