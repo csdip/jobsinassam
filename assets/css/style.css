@@ -1,4 +1,6 @@
 /* Global Css */
+@import "~@flaticon/flaticon-uicons/css/all/all";
+
 :root {
   --color-black: hsl(0, 0%, 0%);
   --color-white: hsl(0, 0%, 100%);
@@ -476,7 +478,7 @@ main .blog-posts .blog-post .post-snippest {
         opacity: 0;
         visibility: hidden;
         transition: 300ms;
-        height: 40px;
+        height: 50px;
         line-height: 40px;
         top: 10px;
     }
@@ -505,7 +507,7 @@ main .blog-posts .blog-post .post-snippest {
         margin-right: 0;
     }
     main {
-        padding-top: 80px;
+        padding-top: 85px;
     }
     main .searchbar__wrapper.desktop{
         display: none;
@@ -524,14 +526,17 @@ main .blog-posts .blog-post .post-snippest {
     nav.active {
         left: 0%;
     }
+    nav .menu li:not(:last-child) {
+        margin-bottom: 12px;
+    }
     
 }
 
 
 @media (max-width:600px){
-    main {  
+    main {
         padding: 15px;
-        padding-top: 75px;
+        padding-top: 80px;
     }
     .container{
         border-radius: 0;
